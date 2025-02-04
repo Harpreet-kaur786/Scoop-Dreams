@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Paradise</title>
+    <link rel="stylesheet" href="/css/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Add Font Awesome CDN link for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html">SCOOP DREAMS</a>
+            </div>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/menu.html">Menu</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="menu">
+        <h2>Our Ice Cream Menu</h2>
+        <table class="menu-table">
+            <thead>
+                <tr>
+                    <th>Ice Cream Flavor</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="menu-item">
+                    <td>
+                        <div class="image-container">
+                            <img src="/assests/pexels-barbland-28309088.jpg" alt="Vanilla Delight" class="flavor-image">
+                        </div>
+                        Vanilla Delight
+                    </td>
+                    <td>A classic creamy vanilla ice cream topped with caramel swirls.</td>
+                    <td>$4.99</td>
+                    <td><button class="add-to-cart" onclick="addToCart('/assests/pexels-barbland-28309088.jpg')">Add to Cart</button></td>
+            
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <div class="image-container">
+                            <img src="/assests/pexels-rawan-jo-1386919-2677814.jpg" alt="Chocolate Fudge" class="flavor-image">
+                        </div>
+                        Chocolate Fudge
+                    </td>
+                    <td>Rich chocolate ice cream with gooey fudge chunks for extra indulgence.</td>
+                    <td>$5.49</td>
+                    <td><button class="add-to-cart" onclick="window.location.href='/pages/cart.html'">Add to Cart</button></td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <div class="image-container">
+                            <img src="/assests/pexels-shaarannnnn-12365249.jpg" alt="Strawberry Bliss" class="flavor-image">
+                        </div>
+                        Vanilla Dream
+                    </td>
+                    <td>Fresh strawberries blended into a creamy, refreshing ice cream.</td>
+                    <td>$4.79</td>
+                    <td><button class="add-to-cart" onclick="window.location.href='/pages/cart.html'">Add to Cart</button></td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <div class="image-container">
+                            <img src="/assests/pexels-basharbazar-756773.jpg" alt="Strawberry Bliss" class="flavor-image">
+                        </div>
+                       Mint Chocolate Chip
+                    </td>
+                    <td>A refreshing blend of creamy mint ice cream with crunchy chocolate chips.</td>
+                    <td>$4.79</td>
+                    <td><button class="add-to-cart" onclick="window.location.href='/pages/cart.html'">Add to Cart</button></td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <div class="image-container">
+                            <img src="/assests/pexels-arda-kaykisiz-672105204-29353006.jpg" alt="Strawberry Bliss" class="flavor-image">
+                        </div>
+                       Mocha Almond Fudge
+                    </td>
+                    <td>A delightful fusion of rich coffee ice cream, swirls of velvety chocolate fudge, and crunchy almond pieces.</td>
+                    <td>$4.79</td>
+                    <td><button class="add-to-cart" onclick="window.location.href='/pages/cart.html'">Add to Cart</button></td>
+                </tr>
+                <tr class="menu-item">
+                    <td>
+                        <div class="image-container">
+                            <img src="/assests/pexels-avichal-lodhi-1054429-2819088.jpg" alt="Strawberry Bliss" class="flavor-image">
+                        </div>
+                       Cookies and Cream
+                    </td>
+                    <td>Creamy vanilla ice cream loaded with crushed chocolate sandwich cookies.</td>
+                    <td>$4.79</td>
+                    <td><button class="add-to-cart" onclick="window.location.href='/pages/cart.html'">Add to Cart</button></td>
+                </tr>
+                <!-- Add more flavors here as needed -->
+            </tbody>
+        </table>
+    </section>
+    
+    
+    
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Ice Cream Paradise | All Rights Reserved</p>
+        <div class="social-icons">
+            <!-- Using Font Awesome icons for social media -->
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+        </div>
+    </div>
+</footer>
+<script>
+    // Function to store the image URL in localStorage
+    function addToCart(imageUrl) {
+        localStorage.setItem('cartImage', imageUrl); // Store the image URL
+        window.location.href = '/pages/cart.html'; // Redirect to cart page
+    }
+</script>
+<script src="/script.js"></script>
+</body>
+</html>

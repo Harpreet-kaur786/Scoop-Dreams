@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Cart - Ice Cream Paradise</title>
+    <link rel="stylesheet" href="/css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">SCOOP DREAMS</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/pages/menu.html">Menu</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items">
+            <!-- Items will be displayed here dynamically -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: <span id="totalPrice">$0.00</span></h3>
+            <button id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </section><section class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-item">
+            <h3>Selected Ice Cream</h3>
+            <img id="cart-image" src="" alt="Ice Cream Image" class="cart-image">
+        </div>
+    </section>
+    
+    <script>
+        // Function to display the image stored in localStorage
+        window.onload = function() {
+            const imageUrl = localStorage.getItem('cartImage'); // Retrieve the image URL
+            if (imageUrl) {
+                document.getElementById('cart-image').src = imageUrl; // Display the image in the cart
+            }
+        }
+    </script>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Ice Cream Paradise | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Script to manage cart -->
+    <script src="script.js"></script>
+</body>
+</html>
