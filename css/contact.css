@@ -1,0 +1,131 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+/* Header */
+header {
+    background-color: #ff6f61; /* Warm, inviting color */
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo */
+header .logo a {
+    color: white;
+    font-size: 2.5rem; /* Larger font for emphasis */
+    text-decoration: none;
+    font-weight: 700; /* Bold for prominence */
+    letter-spacing: 1px; /* Slight spacing for readability */
+    text-transform: uppercase; /* Adds a touch of elegance */
+    display: inline-block;
+    margin-bottom: 0.5rem; /* Space between logo and navigation */
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem; /* Increased spacing for clarity */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500; /* Medium weight for balance */
+    font-size: 1.2rem; /* Slightly larger for readability */
+    text-transform: uppercase; /* Consistent with logo */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Bright accent color */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.contact {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1 {
+    text-align: center;
+    color: #ff6f61;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    margin-top: 15px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e65b50;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .social-icons {
+    margin-top: 1rem;
+}
+
+footer .social-icons a {
+    color: white;
+    margin: 0 1rem;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #ffcc00;
+}
